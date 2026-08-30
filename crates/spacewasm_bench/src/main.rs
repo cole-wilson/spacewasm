@@ -129,7 +129,7 @@ fn coremark() -> f32 {
 
     let mut result = InterpreterResult::OutOfFuel;
     while result == InterpreterResult::OutOfFuel {
-        result = Interpreter.run(code_builder.pages(), &mut engine, usize::MAX);
+        result = Interpreter.run(code_builder.pages(), &mut engine, 100);
     }
 
     engine.result.unwrap_or(RawValue::from_32(0)).read_f32()
