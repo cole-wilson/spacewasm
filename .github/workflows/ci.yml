@@ -270,7 +270,7 @@ jobs:
             "prNumber": "${{ github.event.pull_request.number }}",
             "current": ${{ steps.benchmark.outputs.out }},
             "baseline": ${{ steps.baseline.outputs.out }},
-            "nm_artifacts_url": ${{ steps.upload_nm_artifacts.outputs.artifact-url }}
+            "nm_artifacts_url": "${{ steps.upload_nm_artifacts.outputs.artifact-url }}"
           }
           EOF
 
