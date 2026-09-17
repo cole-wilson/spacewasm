@@ -131,7 +131,7 @@ def main():
 
     for triple in triples:
         data[triple] = get_sizes(triple)
-        data[triple]["nm"] = get_nm(triple)[:25]
+        data[triple]["nm"] = get_nm(triple)[:10]
 
     # start all threads and wait for them to join
     for i in threads: i.start()

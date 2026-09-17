@@ -141,7 +141,7 @@ jobs:
                     for (let symbol of data[triple]["nm"]) {
                       comment += "\t" + symbol + "\n";
                     }
-                    comment +"```\n";
+                    comment +"\t...truncated (see artifact for full table)...\n```\n";
                 }
                 comment += "</details>\n\n";
 
